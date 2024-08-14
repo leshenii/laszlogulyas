@@ -9,14 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.42",
+    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/theme": "^2.2.9",
+    "@radix-ui/react-hover-card": "^1.1.1",
+    "animate.css": "^4.1.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.24",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
+    "next": "14.2.5",
+    "qss": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "tailwind-merge": "^2.5.2",
+    "tailwind-variants": "^0.2.1"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "@types/node": "22.2.0",
+    "@types/react": "18.3.3",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
   }
 }
