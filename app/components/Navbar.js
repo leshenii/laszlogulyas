@@ -38,31 +38,6 @@ export default function NavbarComponent({activeTab, setActiveTab}) {
 
             <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} activeTabClassName="active-tab"/>
 
-            {/*<NavbarBrand className="animate__animated animate__fadeInDown ">
-                <Button onPress={() => fullpage_api.moveTo(1)} color="primary" size="sm" radius="none"
-                        className="hover:text-cyan-700 text-sm kanit-extrabold">
-                    G. LACI
-                </Button>
-            </NavbarBrand>
-            <NavbarContent id="myMenu" className="hidden sm:flex gap-4 " justify="right">
-                <NavbarItem>
-                    <Link data-menuanchor="home" href="#studies" color="secondary"
-                          className="text-sm hover:text-cyan-700" underline="hover">
-                        tanulmányaim
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link data-menuanchor="studies" href="#projects" color="secondary" className="text-sm hover:text-cyan-700" underline="hover">
-                        projektjeim
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link data-menuanchor="projects" href="#contact" color="secondary" className="text-sm hover:text-cyan-700" underline="hover">
-                        elérhetőségeim
-                    </Link>
-                </NavbarItem>
-            </NavbarContent>*/}
-
         </Navbar>
     );
 }
