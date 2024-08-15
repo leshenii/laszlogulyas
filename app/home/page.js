@@ -1,15 +1,24 @@
+'use client'
+
 import {Image} from "@nextui-org/react";
 import NextImage from "next/image";
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {StarsBackground} from "../components/stars-background";
 import {TextGenerateEffect} from "../components/text-generate-effect";
-import useWindowDimensions from "../lib/WindowDimensions";
+import {useWindowWidth} from "@react-hook/window-size";
 
 export default function Home() {
 
     const words = `Laci vagyok, de hívj csak a következő full-stack webfejlesztődnek.`;
 
-    const { width } = useWindowDimensions()
+    const width = useWindowWidth()
+
+    const [domLoaded, setDomLoaded] = useState(false);
+
+    useEffect(() => {
+        setDomLoaded(true);
+    }, []);
+
 
     return (
         <div className="section" style={{zIndex: 1}}>
@@ -23,7 +32,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-full animate__animated animate__fadeInRight">
-                    {width < 768 && (
+                    {domLoaded && width < 768 && (
                         <Image
                             as={NextImage}
                             radius="full"
@@ -39,7 +48,7 @@ export default function Home() {
                             draggable={false}
                         />
                     )}
-                    {width >= 768 &&  (
+                    {domLoaded && width >= 768 &&  (
                         <Image
                             as={NextImage}
                             radius="full"

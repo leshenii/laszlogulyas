@@ -1,8 +1,14 @@
+'use client'
+
 import {motion} from "framer-motion";
 import {cn} from "../lib/utils";
 import pageTo from "./moveTo";
 import TextBorderAnimation from "./text-border-animation";
+import {
+    useWindowWidth
+} from '@react-hook/window-size'
 import useWindowDimensions from "../lib/WindowDimensions";
+import {useEffect, useState} from "react";
 
 type Tab = {
     title: string;
@@ -30,6 +36,12 @@ export const Tabs = ({
     };
 
     const { width } = useWindowDimensions()
+
+    const [domLoaded, setDomLoaded] = useState(false);
+
+    useEffect(() => {
+        setDomLoaded(true);
+    }, []);
 
     return (
         <>
@@ -65,13 +77,14 @@ export const Tabs = ({
                                 )}
                             />
                         )}
-                        {width < 768 && (
+
+                        {domLoaded && width < 768 && (
                             <span className="relative block text-black dark:text-white pt-[1px] text-lg">
                                 {tab.value === "home" ? "👤" : tab.value === "studies" ? "🎓" : tab.value === "projects" ? "👨‍💻" : "📞"}
                             </span>
                         )}
 
-                        {width >= 768 && (
+                        {domLoaded && width >= 768 && (
                             <span className="relative block text-black dark:text-white pt-[1px]">
                                 <TextBorderAnimation text={tab.value === "home" ? "gulyás lászló" : tab.title}
                                                      className="text-sm"/>
