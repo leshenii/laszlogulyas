@@ -1,11 +1,8 @@
-"use client";
-
-import { useMediaQuery } from 'react-responsive';
 import {motion} from "framer-motion";
 import {cn} from "../lib/utils";
 import pageTo from "./moveTo";
 import TextBorderAnimation from "./text-border-animation";
-import useBetterMediaQuery from "../lib/UseBetterMediaQuery";
+import useWindowDimensions from "../lib/WindowDimensions";
 
 type Tab = {
     title: string;
@@ -32,8 +29,7 @@ export const Tabs = ({
         pageTo(idx + 1)
     };
 
-    const isSmallScreen = useBetterMediaQuery('(max-width: 767px)');
-    const isMediumScreenOrLarger = useBetterMediaQuery('(min-width: 768px)');
+    const { width } = useWindowDimensions()
 
     return (
         <>
@@ -69,13 +65,13 @@ export const Tabs = ({
                                 )}
                             />
                         )}
-                        {isSmallScreen && (
+                        {width < 768 && (
                             <span className="relative block text-black dark:text-white pt-[1px]">
                                 {tab.value === "home" ? "👤" : tab.value === "studies" ? "🎓" : tab.value === "projects" ? "👨‍💻" : "📞"}
                             </span>
                         )}
 
-                        {isMediumScreenOrLarger && (
+                        {width >= 768 && (
                             <span className="relative block text-black dark:text-white pt-[1px]">
                                 <TextBorderAnimation text={tab.value === "home" ? "gulyás lászló" : tab.title}
                                                      className="text-sm"/>

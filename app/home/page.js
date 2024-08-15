@@ -3,14 +3,13 @@ import NextImage from "next/image";
 import React from "react";
 import {StarsBackground} from "../components/stars-background";
 import {TextGenerateEffect} from "../components/text-generate-effect";
-import useBetterMediaQuery from "../lib/UseBetterMediaQuery";
+import useWindowDimensions from "../lib/WindowDimensions";
 
 export default function Home() {
 
     const words = `Laci vagyok, de hívj csak a következő full-stack webfejlesztődnek.`;
 
-    const isSmallScreen = useBetterMediaQuery('(max-width: 767px)');
-    const isMediumScreenOrLarger = useBetterMediaQuery('(min-width: 768px)');
+    const { width } = useWindowDimensions()
 
     return (
         <div className="section" style={{zIndex: 1}}>
@@ -24,7 +23,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-full animate__animated animate__fadeInRight">
-                    {isSmallScreen && (
+                    {width < 768 && (
                         <Image
                             as={NextImage}
                             radius="full"
@@ -40,7 +39,7 @@ export default function Home() {
                             draggable={false}
                         />
                     )}
-                    {isMediumScreenOrLarger && (
+                    {width >= 768 &&  (
                         <Image
                             as={NextImage}
                             radius="full"
