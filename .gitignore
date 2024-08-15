@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+jsLibraryMappings.xml
+laszlogulyas.iml
+modules.xml
+vcs.xml
+Project_Default.xml

@@ -6,16 +6,16 @@ import {TextGenerateEffect} from "../components/text-generate-effect";
 
 export default function Home() {
 
-    const words = `Laci vagyok, de hívj csak a következő full stack webfejlesztődnek.`;
+    const words = `Laci vagyok, de hívj csak a következő full-stack webfejlesztődnek.`;
 
     return (
         <div className="section" style={{zIndex: 1}}>
-            <div className="flex flex-row items-center w-4/5 mx-auto pb-[40px] pl-6 ">
-                <div className="flex flex-col mr-10">
-                    <div className="text-6xl text-right text-white animate__animated animate__fadeInDown">
+            <div className="flex flex-col md:flex-row items-center w-4/5 mx-auto pb-[40px] md:pl-6" style={{overflow: "hidden"}}>
+                <div className="flex flex-col md:mr-10">
+                    <div className="text-6xl text-center md:text-right text-white animate__animated animate__fadeInDown">
                         Szia!
                     </div>
-                    <div className="text-right">
+                    <div className="text-center md:text-right pb-6 md:pb-0">
                         <TextGenerateEffect words={words} />
                     </div>
                 </div>
@@ -30,13 +30,13 @@ export default function Home() {
                         alt="Gulyás László portréja"
                         isZoomed
                         classNames={{
-                            wrapper: "shadow-xl shadow-cyan-400/50",
+                            wrapper: "shadow-xl mx-auto md:mx-0 shadow-cyan-400/50",
                         }}
                         draggable={false}
                     />
                 </div>
             </div>
-            <StarsBackground/>
+            <StarsBackground starDensity={0.00060}/>
         </div>
     );
 }

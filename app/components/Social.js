@@ -42,7 +42,7 @@ export default function Social() {
 
     return (
         <>
-            <div className="flex flex-row gap-4 w-full justify-center items-center pb-3 animate__animated animate__fadeInUp"
+            <div className="flex flex-row gap-4 w-full justify-center items-center animate__animated animate__fadeInUp"
                  style={{zIndex: 3, position: "fixed", bottom: "10px"}}>
                 <LinkPreview url="https://www.linkedin.com/in/l%C3%A1szl%C3%B3-guly%C3%A1s-630407246/">
                     <LinkedInIcon/>

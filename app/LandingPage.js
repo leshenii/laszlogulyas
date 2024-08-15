@@ -37,7 +37,6 @@ export default function LandingPage({activeTab, setActiveTab}) {
                         let element1 = document.querySelector('#fp-nav ul');
                         let element2 = document.querySelector('.fp-next');
                         let element3 = document.querySelector('.fp-bottom ul');
-                        console.log(element3)
                         if (element1) {
                             element1.classList.add('animate__animated', 'animate__fadeInLeft');
                         }
@@ -57,13 +56,13 @@ export default function LandingPage({activeTab, setActiveTab}) {
 
                         <ReactFullpage.Wrapper>
                             <Home/>
-                            <div className="section"><StarsBackground/><h1>Section 2</h1></div>
+                            <div className="section"><StarsBackground starDensity={0.00045}/><h1>Section 2</h1></div>
                             <div className="section">
-                                <div className="slide"><StarsBackground starDensity={0.00003}/><h1>Section 3</h1></div>
-                                <div className="slide"><StarsBackground starDensity={0.00003}/><h1>Slide 3.1</h1></div>
-                                <div className="slide"><StarsBackground starDensity={0.00003}/><h1>Slide 3.2</h1></div>
+                                <div className="slide"><StarsBackground starDensity={0.00006}/><h1>Section 3</h1></div>
+                                <div className="slide"><StarsBackground starDensity={0.00006}/><h1>Slide 3.1</h1></div>
+                                <div className="slide"><StarsBackground starDensity={0.00006}/><h1>Slide 3.2</h1></div>
                             </div>
-                            <div className="section"><StarsBackground/><h1>Section 4</h1></div>
+                            <div className="section"><StarsBackground starDensity={0.00005}/><h1>Section 4</h1></div>
                         </ReactFullpage.Wrapper>
                     )}
                 />
