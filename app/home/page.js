@@ -66,7 +66,7 @@ export default function Home() {
                     )}
                 </div>
             </div>
-            <StarsBackground starDensity={0.00060}/>
+            <StarsBackground starDensity={0.00065}/>
         </div>
     );
 }

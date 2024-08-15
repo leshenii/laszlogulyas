@@ -1,7 +1,7 @@
 'use client'
 
 import React from "react";
-import {Navbar} from "@nextui-org/react";
+import {Navbar, NavbarContent} from "@nextui-org/react";
 import {Tabs} from "./tabs";
 
 export default function NavbarComponent({activeTab, setActiveTab}) {
@@ -33,11 +33,12 @@ export default function NavbarComponent({activeTab, setActiveTab}) {
     ];
 
     return (
-        <Navbar className="text-sm bg-opacity-0 mt-2 animate__animated animate__fadeInDown" shouldHideOnScroll={false} isBlurred={false} position="sticky"
+        <Navbar className="text-sm bg-opacity-0 animate__animated animate__fadeInDown mt-2 mx-0 px-0" shouldHideOnScroll={false} isBlurred={false} position="sticky"
                 height="40px" maxWidth="full" style={{position: "fixed"}}>
 
-            <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} activeTabClassName="active-tab"/>
-
+            <NavbarContent className="mx-0 px-0">
+                <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} activeTabClassName="active-tab"/>
+            </NavbarContent>
         </Navbar>
     );
 }

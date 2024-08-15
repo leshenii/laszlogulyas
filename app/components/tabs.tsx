@@ -7,7 +7,7 @@ import TextBorderAnimation from "./text-border-animation";
 import {
     useWindowWidth
 } from '@react-hook/window-size'
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 type Tab = {
     title: string;
@@ -46,9 +46,10 @@ export const Tabs = ({
         <>
             <div
                 className={cn(
-                    "flex flex-row items-center justify-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+                    "flex flex-row items-center justify-center overflow-visible sm:overflow-visible no-visible-scrollbar max-w-full w-full mx-0 px-0",
                     containerClassName
                 )}
+                style={{overflow: "hidden"}}
             >
                 {propTabs.map((tab, idx) => (
                     <button
@@ -66,7 +67,7 @@ export const Tabs = ({
                             transformStyle: "preserve-3d",
                         }}
                     >
-                        {activeTab === tab.value && (
+                        {domLoaded && activeTab === tab.value && (
                             <motion.div
                                 layoutId="clickedbutton"
                                 transition={{type: "spring", bounce: 0.3, duration: 0.6}}
