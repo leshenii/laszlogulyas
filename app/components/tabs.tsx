@@ -7,7 +7,6 @@ import TextBorderAnimation from "./text-border-animation";
 import {
     useWindowWidth
 } from '@react-hook/window-size'
-import useWindowDimensions from "../lib/WindowDimensions";
 import {useEffect, useState} from "react";
 
 type Tab = {
@@ -35,7 +34,7 @@ export const Tabs = ({
         pageTo(idx + 1)
     };
 
-    const { width } = useWindowDimensions()
+    const width = useWindowWidth();
 
     const [domLoaded, setDomLoaded] = useState(false);
 
