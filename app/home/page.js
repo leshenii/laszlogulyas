@@ -3,10 +3,14 @@ import NextImage from "next/image";
 import React from "react";
 import {StarsBackground} from "../components/stars-background";
 import {TextGenerateEffect} from "../components/text-generate-effect";
+import useBetterMediaQuery from "../lib/UseBetterMediaQuery";
 
 export default function Home() {
 
     const words = `Laci vagyok, de hívj csak a következő full-stack webfejlesztődnek.`;
+
+    const isSmallScreen = useBetterMediaQuery('(max-width: 767px)');
+    const isMediumScreenOrLarger = useBetterMediaQuery('(min-width: 768px)');
 
     return (
         <div className="section" style={{zIndex: 1}}>
@@ -20,20 +24,38 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="w-full animate__animated animate__fadeInRight">
-                    <Image
-                        as={NextImage}
-                        radius="full"
-                        shadow="lg"
-                        width={300}
-                        height={300}
-                        src="/gulyas_laszlo_portre.png"
-                        alt="Gulyás László portréja"
-                        isZoomed
-                        classNames={{
-                            wrapper: "shadow-xl mx-auto md:mx-0 shadow-cyan-400/50",
-                        }}
-                        draggable={false}
-                    />
+                    {isSmallScreen && (
+                        <Image
+                            as={NextImage}
+                            radius="full"
+                            shadow="lg"
+                            width={200}
+                            height={200}
+                            src="/gulyas_laszlo_portre.png"
+                            alt="Gulyás László portréja"
+                            isZoomed
+                            classNames={{
+                                wrapper: "shadow-xl mx-auto md:mx-0 shadow-cyan-400/50",
+                            }}
+                            draggable={false}
+                        />
+                    )}
+                    {isMediumScreenOrLarger && (
+                        <Image
+                            as={NextImage}
+                            radius="full"
+                            shadow="lg"
+                            width={300}
+                            height={300}
+                            src="/gulyas_laszlo_portre.png"
+                            alt="Gulyás László portréja"
+                            isZoomed
+                            classNames={{
+                                wrapper: "shadow-xl mx-auto md:mx-0 shadow-cyan-400/50",
+                            }}
+                            draggable={false}
+                        />
+                    )}
                 </div>
             </div>
             <StarsBackground starDensity={0.00060}/>
