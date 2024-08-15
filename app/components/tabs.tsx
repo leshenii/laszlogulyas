@@ -66,7 +66,7 @@ export const Tabs = ({
                             />
                         )}
                         {width < 768 && (
-                            <span className="relative block text-black dark:text-white pt-[1px]">
+                            <span className="relative block text-black dark:text-white pt-[1px] text-lg">
                                 {tab.value === "home" ? "👤" : tab.value === "studies" ? "🎓" : tab.value === "projects" ? "👨‍💻" : "📞"}
                             </span>
                         )}
