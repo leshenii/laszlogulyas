@@ -53,7 +53,6 @@ export default function LandingPage({activeTab, setActiveTab}) {
                         position: "right"
                     }}
                     render={() => (
-
                         <ReactFullpage.Wrapper>
                             <Home/>
                             <div className="section"><StarsBackground starDensity={0.00045}/><h1>Section 2</h1></div>
