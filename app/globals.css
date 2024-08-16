@@ -76,10 +76,6 @@ h1 {
     background: aqua !important;
 }
 
-.fp-tooltip {
-    color: aqua !important;
-}
-
 .fp-bottom {
     padding-bottom: 35px;
     z-index: 2;
@@ -98,14 +94,6 @@ h1 {
     justify-content: center;
 }
 
-/* Uncomment to overwrite the styles of the tooltips too */
-/*
-.fp-tooltip{
-    font-size: 1.2em !important;
-    margin-right: 10px;
-}
-*/
-
 .active-tab {
     background: #202833 !important;
     color: aqua !important;
@@ -113,4 +101,9 @@ h1 {
 
 .relative span {
     color: aqua !important;
+}
+
+.fp-left {
+    left: 0 !important;
+    opacity: 0.4 !important;
 }

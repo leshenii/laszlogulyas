@@ -22,12 +22,12 @@ export default function Home() {
 
     return (
         <div className="section" style={{zIndex: 1}}>
-            <div className="flex flex-col md:flex-row items-center w-4/5 mx-auto pb-[40px] md:pl-6" style={{overflow: "hidden"}}>
-                <div className="flex flex-col md:mr-10">
-                    <div className="text-6xl text-center md:text-right text-white animate__animated animate__fadeInDown">
+            <div className="flex flex-col lg:flex-row items-center w-11/12 lg:w-4/5 mx-auto pb-[40px] lg:pl-6" style={{overflow: "hidden"}}>
+                <div className="flex flex-col lg:mr-10">
+                    <div className="text-6xl text-center lg:text-right text-white animate__animated animate__fadeInDown">
                         Szia!
                     </div>
-                    <div className="text-center md:text-right pb-6 md:pb-0">
+                    <div className="text-center lg:text-right pb-12 lg:pb-0">
                         <TextGenerateEffect words={words} />
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default function Home() {
                             alt="Gulyás László portréja"
                             isZoomed
                             classNames={{
-                                wrapper: "shadow-xl mx-auto md:mx-0 shadow-cyan-400/50",
+                                wrapper: "shadow-xl mx-auto lg:mx-0 shadow-cyan-400/50",
                             }}
                             draggable={false}
                         />
@@ -59,7 +59,7 @@ export default function Home() {
                             alt="Gulyás László portréja"
                             isZoomed
                             classNames={{
-                                wrapper: "shadow-xl mx-auto md:mx-0 shadow-cyan-400/50",
+                                wrapper: "shadow-xl mx-auto lg:mx-0 shadow-cyan-400/50",
                             }}
                             draggable={false}
                         />
