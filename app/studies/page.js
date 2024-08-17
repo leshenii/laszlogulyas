@@ -1,3 +1,5 @@
+'use client'
+
 import {Background, ReactFlow} from "@xyflow/react";
 import {StarsBackground} from "../components/stars-background";
 import React from "react";
@@ -27,7 +29,6 @@ export default function Studies() {
     ];
     const initialEdges = [{ id: 'e1-2', source: '1', target: '2', type: 'floating' }];*/
     const defaultViewport = {x: 0, y: 0, zoom: 1.5};
-
 
     return (
         <div className="section">
