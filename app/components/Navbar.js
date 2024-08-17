@@ -33,7 +33,7 @@ export default function NavbarComponent({activeTab, setActiveTab}) {
     ];
 
     return (
-        <Navbar className="text-sm bg-opacity-0 mt-2 mx-0 px-0" shouldHideOnScroll={false} isBlurred={false} position="sticky"
+        <Navbar className="kanit-extrabold text-sm bg-opacity-0 mt-2 mx-0 px-0" shouldHideOnScroll={false} isBlurred={false} position="sticky"
                 height="40px" maxWidth="full" style={{position: "fixed"}}>
 
             <NavbarContent className="mx-0 px-0">

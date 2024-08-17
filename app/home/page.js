@@ -23,7 +23,7 @@ export default function Home() {
                     <div className="kanit-extrabold text-3xl lg:text-6xl text-center lg:text-right text-white animate__animated animate__fadeInLeft">
                         Szia!
                     </div>
-                    <div className="kanit-extrabold text-3xl lg:text-6xl text-center lg:text-right pb-12 lg:pb-0 animate__animated animate__fadeInLeft">
+                    <div className="text-balance kanit-extrabold text-3xl lg:text-6xl text-center lg:text-right pb-12 lg:pb-0 animate__animated animate__fadeInLeft">
                         Laci vagyok, de hívj csak a következő &nbsp;
                         <h1 className={title({color: "blue", size: width < 1024 ? "sm" : "lg"})}>full-stack webfejlesztődnek</h1>.
                     </div>

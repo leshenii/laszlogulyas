@@ -7,9 +7,11 @@ const edges = [
         "id": "11",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "16",
@@ -19,9 +21,11 @@ const edges = [
         "id": "12",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "15",
@@ -31,9 +35,11 @@ const edges = [
         "id": "13",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "18",
@@ -43,9 +49,11 @@ const edges = [
         "id": "14",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "14",
@@ -55,9 +63,11 @@ const edges = [
         "id": "15",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "18",
@@ -67,9 +77,11 @@ const edges = [
         "id": "16",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "14",
@@ -79,9 +91,11 @@ const edges = [
         "id": "17",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "18",
@@ -91,9 +105,11 @@ const edges = [
         "id": "18",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "19",
@@ -103,9 +119,11 @@ const edges = [
         "id": "19",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "24",
@@ -115,9 +133,11 @@ const edges = [
         "id": "20",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "23",
@@ -127,9 +147,11 @@ const edges = [
         "id": "21",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "25",
@@ -139,9 +161,11 @@ const edges = [
         "id": "22",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "22",
@@ -151,9 +175,11 @@ const edges = [
         "id": "23",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "26",
@@ -163,9 +189,11 @@ const edges = [
         "id": "24",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "27",
@@ -175,9 +203,11 @@ const edges = [
         "id": "25",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "28",
@@ -187,9 +217,11 @@ const edges = [
         "id": "26",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "25",
@@ -199,9 +231,11 @@ const edges = [
         "id": "27",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "30",
@@ -211,9 +245,11 @@ const edges = [
         "id": "28",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "21",
@@ -223,9 +259,11 @@ const edges = [
         "id": "29",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "24",
@@ -235,9 +273,11 @@ const edges = [
         "id": "30",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "35",
@@ -247,9 +287,11 @@ const edges = [
         "id": "31",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "28",
@@ -259,9 +301,11 @@ const edges = [
         "id": "32",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "36",
@@ -271,9 +315,11 @@ const edges = [
         "id": "33",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "30",
@@ -283,9 +329,11 @@ const edges = [
         "id": "34",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
         "animated": true,
+        style: {stroke: 'white'},
         "selected": false
     },
     {
@@ -296,9 +344,11 @@ const edges = [
         "id": "35",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "33",
@@ -308,9 +358,11 @@ const edges = [
         "id": "36",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     },
     {
         "source": "45",
@@ -320,9 +372,11 @@ const edges = [
         "id": "37",
         "type": "floating",
         "markerEnd": {
-            "type": "arrow"
+            "type": "arrow",
+            color: 'white',
         },
-        "animated": true
+        "animated": true,
+        style: {stroke: 'white'},
     }
 ]
 

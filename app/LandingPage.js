@@ -30,7 +30,7 @@ export default function LandingPage({activeTab, setActiveTab}) {
                     slidesNavigation={true}
                     slidesNavPosition="bottom"
                     licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
-                    controlArrowsHTML={['<div></div>', '<div class="fp-arrow"><svg xmlns="http://www.w3.org/2000/svg" class="animate__animated animate__heartBeat animate__infinite mt-6" viewBox="0 0 177.55 247.28"> <polygon style="fill: #66fcf1" points="54.79 247.28 177.55 124.52 53.03 0 0 53.03 71.48 124.52 1.75 194.25 54.79 247.28"/></svg></div>']}
+                    controlArrowsHTML={['<div></div>', '<div class="fp-arrow"><svg xmlns="http://www.w3.org/2000/svg" class="animate__animated animate__heartBeat animate__infinite mt-6" viewBox="0 0 177.55 247.28"> <polygon style="fill: #00ffff" points="54.79 247.28 177.55 124.52 53.03 0 0 53.03 71.48 124.52 1.75 194.25 54.79 247.28"/></svg></div>']}
                     onLeave={(origin, destination, direction) => {
                         setActiveTab(destination.anchor);
                     }}
