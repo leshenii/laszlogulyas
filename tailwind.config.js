@@ -13,6 +13,15 @@ module.exports = {
     ],
     theme: {
         extend: {
+            colors: {
+                bg: "#202833",
+                sky: "#00ffff",
+                programming: "#cc0000",
+                science: "#0066cc",
+                math: "#006600",
+                other: "#c55a11",
+
+            },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
@@ -24,6 +33,7 @@ module.exports = {
                 third: "moveInCircle 40s linear infinite",
                 fourth: "moveHorizontal 40s ease infinite",
                 fifth: "moveInCircle 20s ease infinite",
+                "meteor-effect": "meteor 5s linear infinite",
             },
             keyframes: {
                 moveHorizontal: {
@@ -57,6 +67,14 @@ module.exports = {
                     },
                     "100%": {
                         transform: "translateY(-50%)",
+                    },
+                },
+                meteor: {
+                    "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+                    "70%": { opacity: "1" },
+                    "100%": {
+                        transform: "rotate(215deg) translateX(-500px)",
+                        opacity: "0",
                     },
                 },
             },

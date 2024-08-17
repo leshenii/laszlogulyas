@@ -99,10 +99,18 @@ h1 {
     color: aqua !important;
 }
 
-.relative span {
-    color: aqua !important;
-}
+
 
 .fp-left {
     left: 0 !important;
 }
+
+
+.react-flow__handle {
+    visibility: hidden;
+}
+
+.react-flow__attribution {
+    display: none;
+}
+

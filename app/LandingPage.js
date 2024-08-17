@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react';
 import ReactFullpage from "@fullpage/react-fullpage";
 import Home from "./home/page";
 import {StarsBackground} from "./components/stars-background";
+import Studies from "./studies/page";
 
 export default function LandingPage({activeTab, setActiveTab}) {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -55,7 +56,7 @@ export default function LandingPage({activeTab, setActiveTab}) {
                     render={() => (
                         <ReactFullpage.Wrapper>
                             <Home/>
-                            <div className="section"><StarsBackground starDensity={0.00045}/><h1>Section 2</h1></div>
+                            <Studies/>
                             <div className="section">
                                 <div className="slide"><StarsBackground starDensity={0.00006}/><h1>Section 3</h1></div>
                                 <div className="slide"><StarsBackground starDensity={0.00006}/><h1>Slide 3.1</h1></div>
