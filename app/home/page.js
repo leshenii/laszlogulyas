@@ -1,6 +1,6 @@
 'use client'
 
-import {Image} from "@nextui-org/react";
+import {Chip, Image} from "@nextui-org/react";
 import NextImage from "next/image";
 import React, {useEffect, useState} from "react";
 import {StarsBackground} from "../components/stars-background";

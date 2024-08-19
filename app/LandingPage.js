@@ -5,6 +5,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Home from "./home/page";
 import {StarsBackground} from "./components/stars-background";
 import Studies from "./studies/page";
+import "./globals.css";
 
 export default function LandingPage({activeTab, setActiveTab}) {
     const [isLoaded, setIsLoaded] = useState(false);

@@ -1,6 +1,7 @@
 import "./globals.css";
 import 'animate.css';
 import {Inter} from "next/font/google"
+import {NextUIProvider} from "@nextui-org/react";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -9,7 +10,7 @@ export const metadata = {
         default: "Gulyás László webfejlesztő",
         template: "%s | Gulyás László webfejlesztő"
     },
-    description: "Gulyás László, webfejlesztő. Tekintsd meg a portfólimat, és vedd fel velem a kapcsolatot!",
+    description: "Szia! Laci vagyok, webfejlesztő. Tekintsd meg a portfóliómat, és vedd fel velem a kapcsolatot!",
     icons: {
         icon: "/favicon.svg",
         shortcut: "/favicon.svg",
@@ -29,11 +30,15 @@ export default function RootLayout({children}) {
     return (
         <html lang="en">
 
-        <body className={`${inter.className} kanit-extrabold`}>
-        <main>
-            {children}
-        </main>
-        </body>
+
+            <body className={`${inter.className} kanit-extrabold`}>
+            <NextUIProvider>
+            <main className="dark">
+                    {children}
+            </main>
+            </NextUIProvider>
+            </body>
+
         </html>
     );
 }
